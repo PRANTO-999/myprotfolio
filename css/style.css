@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --backGroundColor:#30db3ecc;
+    --tomatoColor: #c02b10;
+}
+/* ==================comoon css=============== */
+/* ==================navbar css=============== */
+.NavItem{
+    padding-right: 60px;
+    color: #222;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+}
+.NavItem::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 15px;
+    background-color: var(--tomatoColor);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    opacity: 0;
+}
+.NavItem:hover:after{
+    width: 70px;
+    color: var(--tomatoColor);
+    opacity: 1;
+}
+.NavItem:hover{
+   color: #c02b10;
+}
+.navbar{
+    background-color: var(--backGroundColor);
+}
+.navbar-brand{
+    font-size: 35px;
+    color: var(--tomatoColor);
+}
+.navbar-brand:hover{
+    color:var(--tomatoColor);
+}
+.NavBarButton{
+    color: var(--tomatoColor);
+    border: 2px solid var(--tomatoColor);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    height: 60px;
+    width: 170px;
+    line-height: 60px;
+    text-align: center;
+    background: transparent;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.NavBarButton:hover{
+    background-color: var(--tomatoColor);
+    border: none;
+    color: #fff;
+}
+/* ==================navbar css=============== */
+/* ==================banner css=============== */
+#BannerPart{
+    padding: 100px 0 120px;
+    background-color: var(--backGroundColor);
+}
+.Img__box{
+    height: 400px;
+    width: 600px;
+}
+.box__item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    left: -610px;
+    top: 0;
+    background-color: #1C1E53;
+    opacity: .42;
+    border-radius: 10px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.box__item:hover .overlay{
+    left: 0;
+    width: 100%;
+}
+.protfolio__title{
+    color: var(--tomatoColor);
+    font-size: 30px;
+    font-weight: 500;
+}
+.protfolio__head{
+    color: #1C1E53;
+    font-size: 70px;
+    font-weight: 700;
+    padding: 20px 0 15px;
+}
+.protfolio__sumarry{
+    color: #1C1E53;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 500px;
+}
+.protfolio__sumarry span{
+    color: var(--tomatoColor);
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+.protfolio__sumarry span::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 10px;
+    background-color: var(--tomatoColor);
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.protfolio__sumarry span:hover::after{
+    opacity: 1;
+    width: 100%;
+    
+}
+/* ==================banner css=============== */
+/* ==================adventure css=============== */
+#AdventurePart{
+    background-color: var(--backGroundColor);
+    padding: 50px 0 60px;
+}
+.ImgItem{
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.Tour__title{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--tomatoColor);
+}
+.tour__head{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--tomatoColor);
+}
+.tour__summary{
+    font-size: 25px;
+    font-weight: 500;
+    color: #222;
+}
+/* ==================adventure css=============== */
